@@ -269,15 +269,12 @@ with st.expander("Biegung"):
         st.latex(
             rf"M_{{Ed}}={M_Ed:.2f}\,\mathrm{{kNm}}\quad\mathrm{{(Bemessungsmoment)}}"
         )
-
+     
+    with result_col22:
         st.latex(
             rf"W={W:.2f}\,\mathrm{{cm^3}}\quad\mathrm{{(Widerstandsmoment)}}"
         )
 
-    with result_col22:
-        st.latex(
-            rf"\gamma_{{M0}}={1:.2f}\quad\mathrm{{(Teilsicherheitsbeiwert)}}"
-        )
 
     st.markdown("<div style='height: 0.5rem;'></div>", unsafe_allow_html=True)
 
