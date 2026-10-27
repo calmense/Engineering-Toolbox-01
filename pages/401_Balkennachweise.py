@@ -263,11 +263,11 @@ with st.expander("Biegung"):
 
     h3("Eingabewerte")
 
-    result_col1, result_col2  = st.columns(2)
+    result_col11, result_col22, result_col33 = st.columns(3)
 
     with result_col1:
         st.latex(
-            rf"M_{{Ed}}={M_Ed:.2f}\,\mathrm{{kNm}}\quad\mathrm{{(Bemessungswert\ des\ Biegemoments)}}"
+            rf"M_{{Ed}}={M_Ed:.2f}\,\mathrm{{kNm}}\quad\mathrm{{(Bemessungsmoment)}}"
         )
 
         st.latex(
@@ -283,7 +283,7 @@ with st.expander("Biegung"):
 
     h2("Widerstand")
 
-    result_col11, result_col22, result_col33, result_col44 = st.columns(4)
+    result_col11, result_col22, result_col33 = st.columns(3)
 
     with result_col11:
         st.latex(
