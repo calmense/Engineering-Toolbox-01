@@ -263,7 +263,7 @@ with st.expander("Biegung"):
 
     h3("Eingabewerte")
 
-    result_col11, result_col22, result_col33, result_col44 = st.columns(4)
+    result_col11, result_col22, result_col33 = st.columns(3)
 
     with result_col11:
         st.latex(
@@ -274,7 +274,7 @@ with st.expander("Biegung"):
             rf"W={W:.2f}\,\mathrm{{cm^3}}\quad\mathrm{{(Widerstandsmoment)}}"
         )
 
-    with result_col33:
+    with result_col22:
         st.latex(
             rf"\gamma_{{M0}}={1:.2f}\quad\mathrm{{(Teilsicherheitsbeiwert)}}"
         )
