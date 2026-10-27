@@ -283,7 +283,7 @@ with st.expander("Biegung"):
 
     h2("Widerstand")
 
-    result_col11, result_col22, result_col33, result_col44 = st.columns(4)
+    result_col11, result_col22, result_col33 = st.columns(3)
 
     with result_col11:
         st.latex(
