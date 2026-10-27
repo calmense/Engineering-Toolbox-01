@@ -451,9 +451,9 @@ with st.expander("Durchbiegung"):
 
     h2("Durchbiegung")
 
-    result_col1, result_col2, result_col3, result_col4 = st.columns(4)
+    result_col11, result_col22, result_col33 = st.columns(3)
 
-    with result_col1:
+    with result_col11:
         st.latex(
             rf"w=\frac{{5q_kL^4}}{{384EI}}"
             rf"=\frac{{5\cdot{q_k:.2f}\,\mathrm{{kN/m}}\cdot({l*1000:.0f}\,\mathrm{{mm}})^4}}{{384\cdot{E:.0f}\,\mathrm{{N/mm^2}}\cdot{I:.0f}\,\mathrm{{mm^4}}}}"
@@ -469,14 +469,14 @@ with st.expander("Durchbiegung"):
 
     h2("Grenzwert")
 
-    result_col1, result_col2, result_col3, result_col4 = st.columns(4)
+    result_col11, result_col22, result_col33 = st.columns(3)
 
-    with result_col1:
+    with result_col11:
         st.latex(
             rf"w_{{zul}}=\frac{{L}}{{300}}="
             rf"\frac{{{L_mm:.0f}\,\mathrm{{mm}}}}{{300}}="
             rf"{w_zul:.2f}\,\mathrm{{mm}}"
-            rf"\quad\mathrm{{(zulässige\ Durchbiegung;\ Grenzwert\ L/300)}}"
+            rf"\quad\mathrm{{(zulässige\ Durchbiegung)}}"
         )
                 
     st.markdown("<div style='height:0.5rem;'></div>", unsafe_allow_html=True)
@@ -487,9 +487,9 @@ with st.expander("Durchbiegung"):
 
     h2("Nachweis")
 
-    result_col1, result_col2, result_col3, result_col4 = st.columns(4)
+    result_col11, result_col22, result_col33, result_col44 = st.columns(4)
 
-    with result_col1:
+    with result_col11:
         st.latex(
             rf"\eta=\frac{{w}}{{w_{{zul}}}}="
             rf"\frac{{{w_max:.2f}\,\mathrm{{mm}}}}{{{w_zul:.2f}\,\mathrm{{mm}}}}="
