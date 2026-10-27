@@ -265,7 +265,7 @@ with st.expander("Biegung"):
 
     result_col11, result_col22, result_col33, result_col44 = st.columns(4)
 
-    with result_col1:
+    with result_col11:
         st.latex(
             rf"M_{{Ed}}={M_Ed:.2f}\,\mathrm{{kNm}}\quad\mathrm{{(Bemessungsmoment)}}"
         )
@@ -274,7 +274,7 @@ with st.expander("Biegung"):
             rf"W={W:.2f}\,\mathrm{{cm^3}}\quad\mathrm{{(Widerstandsmoment)}}"
         )
 
-    with result_col3:
+    with result_col33:
         st.latex(
             rf"\gamma_{{M0}}={1:.2f}\quad\mathrm{{(Teilsicherheitsbeiwert)}}"
         )
@@ -283,7 +283,7 @@ with st.expander("Biegung"):
 
     h2("Widerstand")
 
-    result_col11, result_col22, result_col33 = st.columns(3)
+    result_col11, result_col22, result_col33, result_col44 = st.columns(4)
 
     with result_col11:
         st.latex(
