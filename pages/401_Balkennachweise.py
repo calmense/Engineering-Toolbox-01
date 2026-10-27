@@ -458,7 +458,7 @@ with st.expander("Durchbiegung"):
             rf"w=\frac{{5q_kL^4}}{{384EI}}"
             rf"=\frac{{5\cdot{q_k:.2f}\,\mathrm{{kN/m}}\cdot({l*1000:.0f}\,\mathrm{{mm}})^4}}{{384\cdot{E:.0f}\,\mathrm{{N/mm^2}}\cdot{I:.0f}\,\mathrm{{mm^4}}}}"
             rf"={w_max:.2f}\,\mathrm{{mm}}"
-            rf"\quad\mathrm{{(maximale\ Durchbiegung)}}"
+            rf"\quad\mathrm{{(max.\ Durchbiegung)}}"
         )
         
     st.markdown("<div style='height:0.5rem;'></div>", unsafe_allow_html=True)
@@ -476,7 +476,7 @@ with st.expander("Durchbiegung"):
             rf"w_{{zul}}=\frac{{L}}{{300}}="
             rf"\frac{{{L_mm:.0f}\,\mathrm{{mm}}}}{{300}}="
             rf"{w_zul:.2f}\,\mathrm{{mm}}"
-            rf"\quad\mathrm{{(zulässige\ Durchbiegung)}}"
+            rf"\quad\mathrm{{(zul.\ Durchbiegung)}}"
         )
                 
     st.markdown("<div style='height:0.5rem;'></div>", unsafe_allow_html=True)
