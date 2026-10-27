@@ -451,7 +451,7 @@ with st.expander("Durchbiegung"):
 
     h2("Durchbiegung")
 
-    result_col11, result_col22, result_col33 = st.columns(3)
+    result_col11, result_col22 = st.columns(2)
 
     with result_col11:
         st.latex(
@@ -469,7 +469,7 @@ with st.expander("Durchbiegung"):
 
     h2("Grenzwert")
 
-    result_col11, result_col22, result_col33 = st.columns(3)
+    result_col11, result_col22 = st.columns(2)
 
     with result_col11:
         st.latex(
@@ -487,7 +487,7 @@ with st.expander("Durchbiegung"):
 
     h2("Nachweis")
 
-    result_col11, result_col22, result_col33, result_col44 = st.columns(4)
+    result_col11, result_col22 = st.columns(2)
 
     with result_col11:
         st.latex(
