@@ -198,7 +198,7 @@ with st.expander("Nachweis"):
     h2("Nahtkräfte")
     h3("Nahtkräfte")
 
-    result_col1, result_col2, result_col3, result_col4 = st.columns(4)
+    result_col1, result_col2 = st.columns(2)
 
     with result_col1:
         st.latex(
@@ -216,7 +216,7 @@ with st.expander("Nachweis"):
         
     h3("Resultierende Nahtkraft") 
 
-    result_col1, result_col2, result_col3, result_col4 = st.columns(4)
+    result_col1, result_col2 = st.columns(2)
     
 
     with result_col1:
@@ -229,9 +229,9 @@ with st.expander("Nachweis"):
 
     h2("Tragfähigkeit")
 
-    result_col11, result_col22, result_col33, result_col44 = st.columns(4)
+    result_col1, result_col2 = st.columns(2)
 
-    with result_col11:
+    with result_col1:
         st.latex(
             rf"f_{{vw,d}}=\frac{{f_u}}{{\sqrt{{3}}\cdot\beta_w\cdot\gamma_{{M2}}}}=\frac{{{fu:.0f}}}{{\sqrt{{3}}\cdot{beta_w:.2f}\cdot{gamma_M2:.2f}}}={fvw_d:.1f}\,\mathrm{{N/mm^2}}\quad\mathrm{{(Bemessungswert\ der\ Schubfestigkeit)}}\;[-1-8/(4.4)]"
         )
@@ -248,7 +248,7 @@ with st.expander("Nachweis"):
 
     with result_col111:
         st.latex(
-        rf"\eta=\frac{{F_{{w,Ed}}}}{{F_{{w,Rd}}}}=\frac{{{Fw_Ed:.2f}}}{{{Fw_Rd:.2f}}}={ausnutzung:.3f}={ausnutzung*100:.1f}\,\%"
+        rf"\eta=\frac{{F_{{w,Ed}}}}{{F_{{w,Rd}}}}=\frac{{{Fw_Ed:.2f}}}{{{Fw_Rd:.2f}}}={ausnutzung:.3f}={ausnutzung*100:.0f}\,\%"
     )
 
 
