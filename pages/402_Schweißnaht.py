@@ -198,7 +198,7 @@ with st.expander("Nachweis"):
     h2("Nahtkräfte")
     h3("Nahtkräfte")
 
-    result_col1, result_col2 = st.columns(2)
+    result_col1, result_col2 = st.columns([2.5, 1])
 
     with result_col1:
         st.latex(
@@ -216,7 +216,7 @@ with st.expander("Nachweis"):
         
     h3("Resultierende Nahtkraft") 
 
-    result_col1, result_col2 = st.columns(2)
+    result_col1, result_col2 = st.columns([2.5, 1])
     
 
     with result_col1:
@@ -229,7 +229,7 @@ with st.expander("Nachweis"):
 
     h2("Tragfähigkeit")
 
-    result_col1, result_col2 = st.columns(2)
+    result_col1, result_col2 = st.columns([2.5, 1])
 
     with result_col1:
         st.latex(
